@@ -62,7 +62,7 @@ class TestVarasto(unittest.TestCase):
 
     def test_negatiivinen_ottaminen_ei_onnistu(self):
         saatu = self.varasto.ota_varastosta(-10)
-        self.assertEqual(saatu, 10)
+        self.assertEqual(saatu, 0)
 
     def test_negatiivinen_tilavuus_ei_onnistu(self):
         varasto = Varasto(-10)
